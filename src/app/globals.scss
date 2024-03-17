@@ -1,0 +1,21 @@
+
+
+$primary-color:#FE735B;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+button{
+    background-color: $primary-color;
+    width: 30%;
+    padding: 1.2rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    font-weight: bolder;
+}

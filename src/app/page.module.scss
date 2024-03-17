@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    border: 1px solid;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+}
+
+.textContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    span{
+        color: #FE735B;
+    }
+
+    h1{
+        font-size: 2.9rem;
+        color: #243C42;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+}
