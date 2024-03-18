@@ -1,9 +1,11 @@
+@import '../styles/global';
+
 .container{
     display: flex;
     border: 1px solid;
     align-items: center;
     justify-content: space-evenly;
-    height: 90vh;
+    height: 100vh;
 }
 
 .textContainer{
@@ -23,5 +25,12 @@
 
     p{
         font-size: 1.2rem;
+    }
+
+    button{
+        @include buttonStyle();
+        width: 30%;
+        padding: 1.2rem 1rem;
+        border-radius: 0.5rem;
     }
 }
