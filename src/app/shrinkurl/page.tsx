@@ -18,7 +18,7 @@ type urlData = {
   };
 };
 
-const shrinkurl = () => {
+const Shrinkurl = () => {
   const [longUrl, setLongUrl] = useState<string>("");
 
   const [urlData, seturlData] = useState<urlData>({
@@ -78,4 +78,4 @@ const shrinkurl = () => {
   );
 };
 
-export default shrinkurl;
+export default Shrinkurl;
