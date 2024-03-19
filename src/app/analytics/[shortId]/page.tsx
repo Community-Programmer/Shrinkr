@@ -42,7 +42,7 @@ const ShortId = ({params}:Props) => {
 
       useEffect(()=>{
           fetchAnalyticalData(shortId);
-      },[])
+      },[shortId])
 
 
   return (

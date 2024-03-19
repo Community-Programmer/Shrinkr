@@ -49,16 +49,15 @@ const Shrinkurl = () => {
   };
 
   const downloadImage = () => {
-    // Create a temporary link element
+
     const link = document.createElement('a');
     link.href = urlData.data.QrData;
     link.download = `${urlData.data.shortUrlId}.png`;
-    // Trigger the download
     document.body.appendChild(link);
     link.click();
-    // Clean up
     document.body.removeChild(link);
   };
+  
   return (
     <>
       <span className="page__sub__heading">
