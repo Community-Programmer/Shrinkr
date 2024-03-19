@@ -34,10 +34,11 @@ export const POST = async (req:NextRequest,res:NextResponse) => {
         const shortUrlData = new urlModel({
             originalUrl: longUrl,
             shortUrlId: shortUrlId,
+            shortUrl: shortedUrl,
             QrData: urlQrData
           });
           await shortUrlData.save();
-        return NextResponse.json({shortUrl:shortedUrl,data: shortUrlData})
+        return NextResponse.json({data: shortUrlData})
     } catch (error) {
         console.log(error)
     }

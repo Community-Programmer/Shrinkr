@@ -10,12 +10,12 @@ const links = [
     path: "/shrinkurl",
   },
   {
-    title: "Qr code generator",
-    path: "/qrgenerator",
+    title: "Analytics",
+    path: "/analytics",
   },
   {
     title: "My urls",
-    path: "/my urls",
+    path: "/myurls",
   },
 ];
 

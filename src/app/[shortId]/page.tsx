@@ -1,4 +1,5 @@
 import { getShortUrl } from "@/libs/getUrl";
+import { updateAnalytics } from "@/libs/updateAnalytics";
 import { permanentRedirect } from "next/navigation";
 
 
@@ -12,6 +13,7 @@ const page = async({params}:Props) => {
     const { shortId } = params;
 
     const shortUrl = await getShortUrl(shortId);
+    await updateAnalytics(shortId);
     return permanentRedirect(shortUrl.originalUrl);
 }
 

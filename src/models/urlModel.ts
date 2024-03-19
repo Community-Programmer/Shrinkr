@@ -11,6 +11,11 @@ const urlSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
+    shortUrl: {
+      type: String,
+      required: true,
+      unique: true
+    },
     QrData:{
       type: String,
       required: true,
