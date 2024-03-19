@@ -6,10 +6,12 @@
 
 .navbar{
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     border: 1px solid;
     padding: 0.5rem;
+    z-index: 3;
 }
 
 

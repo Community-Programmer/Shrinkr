@@ -10,6 +10,7 @@ import axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
 import { EmailIcon, EmailShareButton, FacebookIcon, FacebookShareButton, LinkedinIcon, LinkedinShareButton, RedditIcon, RedditShareButton, TelegramIcon, TelegramShareButton, WhatsappIcon, WhatsappShareButton } from "react-share";
+import { useRouter } from "next/navigation";
 
 export type urlData = {
   data: {
@@ -27,6 +28,8 @@ const Shrinkurl = () => {
   const [urlData, seturlData] = useState<urlData>({
     data: { originalUrl: "", shortUrlId: "", shortUrl:"", QrData: "", timestamp:[] },
   });
+
+  const router = useRouter();
 
   const fetchData = async () => {
     try {
@@ -101,7 +104,7 @@ const Shrinkurl = () => {
               </span>
 
               <div className='btnContainer'>
-                <button>Analytics</button> <button>Short another URL</button>
+                <button onClick={()=>router.push(`/analytics/${urlData.data.shortUrlId}`)}>Analytics</button> <button>Short another URL</button>
               </div>
               <h3>Share</h3>
               <div className='socialLinks'>

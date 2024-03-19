@@ -23,7 +23,7 @@ type analyticsData =  urlData & {
   
 
 
-const page = ({params}:Props) => {
+const ShortId = ({params}:Props) => {
 
     const {shortId} = params;
 
@@ -76,4 +76,4 @@ const page = ({params}:Props) => {
   )
 }
 
-export default page
+export default ShortId
