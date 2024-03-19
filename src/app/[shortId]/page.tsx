@@ -9,7 +9,7 @@ type Props = {
     };
   };
 
-const page = async({params}:Props) => {
+const shortId = async({params}:Props) => {
     const { shortId } = params;
 
     const shortUrl = await getShortUrl(shortId);
@@ -17,4 +17,4 @@ const page = async({params}:Props) => {
     return permanentRedirect(shortUrl.originalUrl);
 }
 
-export default page
+export default shortId

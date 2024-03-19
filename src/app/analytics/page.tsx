@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { FaLink } from 'react-icons/fa';
 
-const page = () => {
+const Analytics = () => {
 
     const [shortUrl, setShortUrl] = useState<string>('');
 
@@ -53,4 +53,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Analytics
