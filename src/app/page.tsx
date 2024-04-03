@@ -1,11 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
-import ParticlesComponent from "@/components/ParticlesComponent/ParticlesComponent";
 
 export default function Home() {
   return (
     
-    <ParticlesComponent>
+   
     <main className={styles.container}>
       <div className={styles.textContainer}>
         <h1>
@@ -26,6 +25,5 @@ export default function Home() {
         <Image src={"/landingpage.jpg"} alt="url" width={300} height={300} />
       </div>
     </main>
-    </ParticlesComponent>
   );
 }
